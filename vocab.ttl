@@ -11,6 +11,9 @@
 news:Journaliste a rdfs:Class ;
     rdfs:label "Journaliste"@fr .
 
+news:Journaliste a rdfs:Class ;
+    rdfs:label "Journaliste"@fr .
+
 news:Journale a rdfs:Class ;
     rdfs:label "Journale"@fr .
 
@@ -23,15 +26,22 @@ news:Interview a rdfs:Class ;
 news:Interview a rdfs:Class ;
     rdfs:label "Article"@fr .
 
+news:Celebrite a rdfs:Class ;
+    rdfs:label "Article"@fr .
+
 
 
 news:ecritPour a rdf:Property ;
-    rdfs:label "ecritPour"@fr ;
+    rdfs:label "ecrit pour"@fr ;
+    rdfs:domain news:Journaliste .
+
+news:aUnTitre a rdf:Property ;
+    rdfs:label "a un titre"@fr ;
     rdfs:domain news:Journale .
 
-news:interviewerUn a rdf:Property ;
+news:interviewerUne a rdf:Property ;
     rdfs:label "interviewerUn"@fr ;
-    rdfs:domain news:Player .
+    rdfs:domain news:Celebrite .
 
 news:redigerUn a rdf:Property ;
     rdfs:label "redigerUn"@fr ;
@@ -40,7 +50,6 @@ news:redigerUn a rdf:Property ;
 news:publierDans a rdf:Property ;
     rdfs:label "publierDans"@fr ;
     rdfs:domain news:Magazine .
-
 
 news:effectueePar a rdf:Property ;
     rdfs:label "effectueePar"@fr ;
