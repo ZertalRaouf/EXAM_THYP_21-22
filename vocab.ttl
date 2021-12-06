@@ -1,0 +1,47 @@
+@prefix news: <http://omeka.org/s/vocabs/news#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# news
+
+news:Journaliste a rdfs:Class ;
+    rdfs:label "Journaliste"@fr .
+
+news:Journale a rdfs:Class ;
+    rdfs:label "Journale"@fr .
+
+news:Magazine a rdfs:Class ;
+    rdfs:label "Magazine"@fr .
+
+news:Interview a rdfs:Class ;
+    rdfs:label "Interview"@fr .
+
+news:Interview a rdfs:Class ;
+    rdfs:label "Article"@fr .
+
+
+
+news:ecritPour a rdf:Property ;
+    rdfs:label "ecritPour"@fr ;
+    rdfs:domain news:Journale .
+
+news:interviewerUn a rdf:Property ;
+    rdfs:label "interviewerUn"@fr ;
+    rdfs:domain news:Player .
+
+news:redigerUn a rdf:Property ;
+    rdfs:label "redigerUn"@fr ;
+    rdfs:domain news:Article .
+
+news:publierDans a rdf:Property ;
+    rdfs:label "publierDans"@fr ;
+    rdfs:domain news:Magazine .
+
+
+news:effectueePar a rdf:Property ;
+    rdfs:label "effectueePar"@fr ;
+    rdfs:domain news:Journaliste .
